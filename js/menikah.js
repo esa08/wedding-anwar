@@ -1,3 +1,5 @@
+var audio = new Audio('file:///C:/Users/fx506/Downloads/daeng-sherly-menikah-master/daeng-sherly-menikah-master/audio.mp3');
+audio.play();
 // Get that hamburger menu cookin' //
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -52,11 +54,9 @@ function scrollFunction() {
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
+  
 });
 $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
-
-var audio = new Audio('audio.mp3');
-audio.play();
