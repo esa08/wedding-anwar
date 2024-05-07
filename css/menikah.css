@@ -14,6 +14,10 @@ html {
   width: 100%;
   min-height: 100%;
 }
+body, html {
+  overflow: hidden;
+  height:  100%;
+}
 
 .header-wrapper {
   padding-bottom: 30px;
@@ -112,6 +116,26 @@ html {
   border-bottom: 2px solid #c28285;
 }
 
+.open-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.open-btn .button {
+  background-color: #976160;
+  border: #976160;
+  font-size: 1rem;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.button:hover {
+  background-color: #bf7877;
+  border: 2px solid #bf7877;
+}
 
 .space40px{
   height: 40px;

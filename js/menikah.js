@@ -50,16 +50,22 @@ function scrollFunction() {
 
 // Preloader
 $(document).ready(function($) {
-  document.body.addEventListener("touchstart", () => {
-    document.getElementById("musicplayer").play();
+  // document.body.addEventListener("touchstart", () => {
+  //   document.getElementById("musicplayer").play();
+  // });
+  var button = document.getElementById("buka-undangan");
+  button.addEventListener("click", () => {
+    document.body.style.overflow = "visible";
+    button.style.display = "none";
+    document.documentElement.style.overflow = "visible";
+    var target = document.getElementsByClassName("body-main")[0];
+    window.scrollTo({
+      top: target.offsetTop,
+      behavior: 'smooth' // Animasi gulir
   });
-  // var button = document.getElementById("clickme");
-  // button.addEventListener("click", () => {
-  //   this.getElementById("musicplayer").play();
-  // })
-  setTimeout(() => {
-    button.click();
-  }, 1);
+  var audio =  new Audio("audio.mp3");
+  audio.play();
+  })
 $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
   
