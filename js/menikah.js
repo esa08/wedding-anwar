@@ -1,10 +1,8 @@
-var audio = new Audio('file:///C:/Users/fx506/Downloads/daeng-sherly-menikah-master/daeng-sherly-menikah-master/audio.mp3');
-audio.play();
+
 // Get that hamburger menu cookin' //
 
 document.addEventListener("DOMContentLoaded", function() {
   
-
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -44,15 +42,25 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
   } else {
-    document.getElementById("toTop").style.display = "none";
+    
   }
 }
+// document.body.on
 
 // Preloader
 $(document).ready(function($) {
-  $(".preloader-wrapper").fadeOut();
+  document.body.addEventListener("touchstart", () => {
+    document.getElementById("musicplayer").play();
+  });
+  // var button = document.getElementById("clickme");
+  // button.addEventListener("click", () => {
+  //   this.getElementById("musicplayer").play();
+  // })
+  setTimeout(() => {
+    button.click();
+  }, 1);
+$(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
   
 });
