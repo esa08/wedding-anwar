@@ -59,6 +59,8 @@ $(document).ready(function($) {
     button.style.display = "none";
     document.documentElement.style.overflow = "visible";
     var target = document.getElementsByClassName("body-main")[0];
+    var navbar = document.getElementsByClassName("navbar")[0];
+    navbar.style.display = "block";
     window.scrollTo({
       top: target.offsetTop,
       behavior: 'smooth' // Animasi gulir

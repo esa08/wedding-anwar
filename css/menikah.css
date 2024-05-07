@@ -22,6 +22,9 @@ body, html {
 .header-wrapper {
   padding-bottom: 30px;
 }
+.navbar {
+  display: none;
+}
 
 .navbar-item {
   line-height: 38px;
